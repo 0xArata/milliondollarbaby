@@ -1,0 +1,34 @@
+---
+import { Image } from "astro:assets";
+import logo from "../../public/TATTOOCOIN.svg"
+---
+
+
+<header class="fixed top-0 z-10 py-1 px-4 max-w-full lg:px-6">
+    <nav class="grid grid-cols-10 max-w-full">
+        <a href="{{ site.baseurl }}/" class="text-gray-900 hover:text-gray-300 col-span-5">
+            <Image src={logo} alt="TATTOOCOIN" class="w-40 h-40" />
+        </a>
+        <div class="flex items-center col-span-5">
+            <a href="{{ site.baseurl }}/whitepaper" class="text-white hover:text-gray-300">
+                Buy TATTOOCOIN
+            </a>
+            <a href="{{ site.baseurl }}/faq" class="ml-4 text-white hover:text-gray-300">
+                FAQ
+            </a>
+            <a href="{{ site.baseurl }}/contact" class="ml-4 text-white hover:text-gray-300">
+                Contact
+            </a>
+        </div>
+    </nav>
+    <div class="relative">
+        <!-- <h1 class="text-4xl font-bold leading-tight text-center text-gray-900 lg:text-5xl">
+            Welcome to 💰 TATTOOCOIN 💰
+        </h1>
+        <p class="mt-4 text-lg text-center text-gray-900">
+            The first cryptocurrency for the tattoo industry
+        </p> -->
+       
+        <!-- <video src="../../public/homeVideo.mp4" controls class="w-full h-auto" /> -->
+    </div>
+</header>
